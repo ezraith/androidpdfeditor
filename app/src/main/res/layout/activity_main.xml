@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+<!--    <ImageView-->
+<!--            android:id="@+id/pdfImage"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:contentDescription="@null"-->
+<!--            android:scaleType="fitCenter" />-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/pdfName"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="shannon1948.pdf"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/currentPage"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textAlignment="viewEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalPages"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="/ 55"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/moveButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_touch_app_white_36" />
+
+        <ImageButton
+            android:id="@+id/drawButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_create_white_36" />
+
+        <ImageButton
+            android:id="@+id/highlightButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_brush_white_36" />
+
+        <ImageButton
+            android:id="@+id/eraseButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_close_white_36" />
+
+        <ImageButton
+            android:id="@+id/undoButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_undo_white_36" />
+
+        <ImageButton
+            android:id="@+id/redoButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_redo_white_36" />
+
+        <ImageButton
+            android:id="@+id/previousPage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_arrow_upward_white_36" />
+
+        <ImageButton
+            android:id="@+id/nextPage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_arrow_downward_white_36" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/pdfLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
